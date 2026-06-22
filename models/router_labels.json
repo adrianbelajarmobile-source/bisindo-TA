@@ -1,0 +1,5 @@
+{
+  "IDLE": 0,
+  "STATIC": 1,
+  "DYNAMIC": 2
+}
