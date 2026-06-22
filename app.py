@@ -96,7 +96,7 @@ def main() -> None:
         initial_sidebar_state="collapsed",
     )
 
-    # st_autorefresh(interval=1200, key="ui_refresh")
+    st_autorefresh(interval=1200, key="ui_refresh")
 
     init_session_state()
     inject_mobile_css()
@@ -151,8 +151,8 @@ def main() -> None:
         video_processor_factory=BisindoVideoProcessor,
         media_stream_constraints={
             "video": {
-                "width": {"ideal": 320},
-                "height": {"ideal": 240},
+                "width": {"ideal": 640},
+                "height": {"ideal": 480},
                 "frameRate": {"ideal": 10, "max": 10},
                 "facingMode": {"ideal": st.session_state.camera_facing},
             },
